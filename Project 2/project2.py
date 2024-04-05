@@ -1,13 +1,12 @@
 """
 Math 560
 Project 2
-Fall 2021
+Spring 2024
 
 project2.py
 
-Partner 1:
-Partner 2:
-Date:
+Ruslan Basyrov
+Date: April 4 2024
 """
 
 # Import math and other p2 files.
@@ -30,6 +29,9 @@ def bdfs(maze, alg):
         raise Exception('Incorrect alg! Need BFS or DFS!')
 
     ##### Your implementation goes here. #####
+	if alg == BFS:
+		struct = 
+
     return []
     ##### Your implementation goes here. #####
 
