@@ -48,7 +48,7 @@ class Stack:
 	"""
 	def isFull(self):
 		##### IMPLEMENT! #####
-		return len(self.stack) >= self.numElems
+		return len(self.stack) == self.numElems
 
 	"""
 	isEmpty function to check if the stack is empty.
@@ -62,10 +62,7 @@ class Stack:
 	"""
 	def resize(self):
 		##### IMPLEMENT! #####
-		new_size = len(self.stack) * 2
-		new_stack = [self.stack[x] if x < self.numElems else None for x in range(0, new_size)]
-		self.stack = new_stack
-		return
+		self.stack = self.stack + [None for x in self.stack]
 
 	"""
 	push function to push a value onto the stack.
@@ -77,7 +74,6 @@ class Stack:
 		self.stack[self.numElems] = val
 		self.top = self.numElems
 		self.numElems += 1
-		return
 
 	"""
 	pop function to pop the value off the top of the stack.
